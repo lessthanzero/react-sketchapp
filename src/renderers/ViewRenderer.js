@@ -112,8 +112,7 @@ export default class ViewRenderer extends SketchRenderer {
     );
 
     const fill = makeColorFill(backgroundColor);
-    const content = makeShapeGroup(frame, [shapeLayer], [fill]);
-
+    const content = makeShapeGroup(frame, [shapeLayer], [fill], props.namekey);
     let innerShadows = [];
     let shadows = [];
 
