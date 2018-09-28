@@ -209,9 +209,7 @@ export function makeResizeConstraint(resizingConstraint: ?ResizeConstraints): nu
 
 export function addNameKey(nameKey: string = ''): string {
   let nKey = '';
-  if (String(nameKey) == 'true') {
-    nKey = '= ';
-  } else if (nameKey !== undefined) {
+  if (nameKey !== undefined) {
     nKey = nameKey;
   }
   return nKey;
