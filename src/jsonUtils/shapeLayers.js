@@ -1,7 +1,7 @@
 // @flow
 import type { SJFill, SJPath, SJRect, SJShapeGroupLayer } from 'sketchapp-json-flow-types';
-import addNameKey from './hacksForJSONImpl';
 import { BorderPosition } from 'sketch-constants';
+import { addNameKey } from './hacksForJSONImpl';
 import makeResizeConstraint from './resizeConstraint';
 import { generateID, makeRect, makeColorFromCSS } from './models';
 import { makeStyle } from './style';
