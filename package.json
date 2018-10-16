@@ -1,5 +1,5 @@
 {
-  "name": "react-sketchapp",
+  "name": "@avito/react-sketchapp",
   "version": "2.1.0",
   "description": "A React renderer for Sketch.app",
   "main": "lib/index.js",
