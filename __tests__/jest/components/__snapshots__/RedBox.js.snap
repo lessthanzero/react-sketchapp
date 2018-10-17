@@ -3,6 +3,7 @@
 exports[`<RedBox /> renders simple errors 1`] = `
 <view
   name="RedBox"
+  namekey={undefined}
   resizingConstraint={undefined}
   shadows={undefined}
   style={
@@ -32,6 +33,7 @@ exports[`<RedBox /> renders simple errors 1`] = `
   </text>
   <view
     name="Frames"
+    namekey={undefined}
     resizingConstraint={undefined}
     shadows={undefined}
     style={
@@ -177,6 +179,7 @@ exports[`<RedBox /> renders simple errors 1`] = `
 exports[`<RedBox /> renders string errors 1`] = `
 <view
   name="RedBox"
+  namekey={undefined}
   resizingConstraint={undefined}
   shadows={undefined}
   style={
