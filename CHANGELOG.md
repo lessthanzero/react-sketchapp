@@ -1,3 +1,8 @@
+## 2.1.1 (2018-12-03)
+
+- Update shadow prop types
+- Update Jest config
+
 ## 2.1.0 (2018-09-18)
 
 - Ensure `makeSymbol` does not change currentPage (#353 - Thanks @jaridmargolin!)
