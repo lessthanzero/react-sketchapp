@@ -1,8 +1,4 @@
-# Change Log
-
-This project adheres to [Semantic Versioning](http://semver.org/). Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/airbnb/react-sketchapp/releases) page.
-
-## Version 3.0.0
+## 3.0.0
 
 - Fix ShapeGroup on nodejs (#387)
 - Handle specifying document in injectSymbols (#388)
@@ -13,14 +9,14 @@ This project adheres to [Semantic Versioning](http://semver.org/). Every release
 - Experimental support for `transform`
 - Experimental support for running `react-sketchapp` on NodeJS
 
-## Version 2.1.0
+## 2.1.0
 
 - Ensure `makeSymbol` does not change currentPage (#353 - Thanks @jaridmargolin!)
 - Fix Text decoration underline style (#370 - Thanks @thecalvinchan!)
 - Add possibility to add multiple shadows and shadow spread (#277 - Thanks @ludwigfrank and @thierryc!)
 - Support rendering into wrapped object (hence support the new Sketch API) (#379)
 
-## Version 2.0.0
+## 2.0.0
 
 - Now throws if the "Symbols" page is explicitly passed in as the `container` on the `render` method. Previously if you explicitly passed in the "Symbols" pages as a container, it would create a new page and render onto that. (#297 - Thanks @jaridmargolin!)
 - Now throws an error if you attempt to render a Document component into a node intended to be a child of `Document`. (#297 - Thanks @jaridmargolin!)
