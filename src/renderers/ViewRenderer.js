@@ -73,7 +73,7 @@ export default class ViewRenderer extends SketchRenderer {
       props.resizingConstraint,
     );
 
-    const content = makeShapeGroup(frame, [shapeLayer], style, props.shadows);
+    const content = makeShapeGroup(frame, [shapeLayer], style, props.shadows, props.namekey);
 
     if (hasAnyDefined(style, OVERFLOW_STYLES)) {
       if (
