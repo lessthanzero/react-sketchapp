@@ -11,7 +11,7 @@ export const ViewPropTypes = {
   // TODO(lmr): do some nice warning stuff like RN does
   style: or([PropTypes.shape(ViewStylePropTypes), PropTypes.number]),
   name: PropTypes.string,
-  isToggle: PropTypes.default.bool,
+  isToggle: PropTypes.bool,
   resizingConstraint: PropTypes.shape({
     ...ResizingConstraintPropTypes,
   }),
