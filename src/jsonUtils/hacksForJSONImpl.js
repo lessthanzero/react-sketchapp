@@ -207,14 +207,6 @@ export function makeResizeConstraint(resizingConstraint: ?ResizeConstraints): nu
   return RESIZE_CONSTRAINTS.none; // No constraints
 }
 
-export function addNameKey(nameKey: string = ''): string {
-  let nKey = '';
-  if (nameKey !== undefined) {
-    nKey = nameKey;
-  }
-  return nKey;
-}
-
 // This shouldn't need to call into Sketch, but it does currently, which is bad for perf :(
 function createStringAttributes(textStyles: TextStyle): Object {
   const font = findFont(textStyles);

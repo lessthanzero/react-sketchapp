@@ -1,6 +1,6 @@
 // @flow
 import type { SJFill, SJPath, SJRect, SJShapeGroupLayer } from 'sketchapp-json-flow-types';
-import { makeResizeConstraint, addNameKey } from './hacksForJSONImpl';
+import { makeResizeConstraint } from './hacksForJSONImpl';
 import { generateID, makeRect } from './models';
 import type { ResizeConstraints } from '../types';
 
@@ -170,7 +170,7 @@ export const makeShapeGroup = (
   frame: SJRect,
   layers: Array<any> = [],
   fills?: Array<SJFill> = [],
-  nameKey?: string,
+  specChar?: string,
   resizingConstraint?: ResizeConstraints,
 ): SJShapeGroupLayer => ({
   _class: 'shapeGroup',
@@ -178,7 +178,7 @@ export const makeShapeGroup = (
   frame,
   isLocked: false,
   isVisible: true,
-  name: `${addNameKey(nameKey)}ShapeGroup`,
+  name: `${specChar || ''}ShapeGroup`,
   nameIsFixed: false,
   resizingConstraint: makeResizeConstraint(resizingConstraint),
   resizingType: 0,

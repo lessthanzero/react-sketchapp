@@ -112,7 +112,8 @@ export default class ViewRenderer extends SketchRenderer {
     );
 
     const fill = makeColorFill(backgroundColor);
-    const content = makeShapeGroup(frame, [shapeLayer], [fill], props.namekey);
+    const specChar = props.isToggle ? '= ' : '';
+    const content = makeShapeGroup(frame, [shapeLayer], [fill], specChar);
     let innerShadows = [];
     let shadows = [];
 
