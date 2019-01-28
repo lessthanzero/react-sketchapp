@@ -76,14 +76,6 @@ export const makeImageDataFromUrl = (url: string): MSImageData => {
   return MSImageData.alloc().initWithImage(image);
 };
 
-export function addNameKey(nameKey: string = ''): string {
-  let nKey = '';
-  if (nameKey !== undefined) {
-    nKey = nameKey;
-  }
-  return nKey;
-}
-
 // This shouldn't need to call into Sketch, but it does currently, which is bad for perf :(
 function createStringAttributes(textStyles: TextStyle): Object {
   const font = findFont(textStyles);

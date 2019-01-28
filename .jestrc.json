@@ -1,5 +1,6 @@
 {
   "testEnvironment": "node",
+  "testURL": "http://localhost/",
   "browser": true,
   "testRegex": "/__tests__/jest/.*\\.jsx?$",
   "testPathIgnorePatterns": [
