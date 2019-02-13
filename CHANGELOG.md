@@ -1,4 +1,10 @@
-## 3.0.0
+## 3.0.0-beta.3
+
+- Fix setting overrides (#409)
+- Fix images on NodeJS
+- Fix Border-radius clipping incorrectly calculated (#279)
+
+## 3.0.0-beta.1
 
 - Fix ShapeGroup on nodejs (#387)
 - Handle specifying document in injectSymbols (#388)
@@ -21,15 +27,7 @@
 - Add possibility to add multiple shadows and shadow spread (#277 - Thanks @ludwigfrank and @thierryc!)
 - Support rendering into wrapped object (hence support the new Sketch API) (#379)
 
-<<<<<<< HEAD
-
-## 2.0.0
-
-=======
-
 ## 2.0.0 (2018-05-12)
-
-> > > > > > > old-toggle
 
 - Now throws if the "Symbols" page is explicitly passed in as the `container` on the `render` method. Previously if you explicitly passed in the "Symbols" pages as a container, it would create a new page and render onto that. (#297 - Thanks @jaridmargolin!)
 - Now throws an error if you attempt to render a Document component into a node intended to be a child of `Document`. (#297 - Thanks @jaridmargolin!)
