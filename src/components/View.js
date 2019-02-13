@@ -11,7 +11,7 @@ export const ViewPropTypes = {
   // TODO(lmr): do some nice warning stuff like RN does
   style: or([PropTypes.shape(ViewStylePropTypes), PropTypes.number]),
   name: PropTypes.string,
-  namekey: PropTypes.string,
+  isToggle: PropTypes.bool,
   resizingConstraint: PropTypes.shape({
     ...ResizingConstraintPropTypes,
   }),
@@ -35,7 +35,7 @@ export default class View extends React.Component {
     return (
       <view
         name={this.props.name}
-        namekey={this.props.namekey}
+        isToggle={this.props.isToggle}
         style={StyleSheet.flatten(this.props.style)}
         resizingConstraint={this.props.resizingConstraint}
         shadows={this.props.shadows}

@@ -1,29 +1,33 @@
-# Change Log
+## 3.0.0-beta.3
 
-This project adheres to [Semantic Versioning](http://semver.org/). Every release, along with the migration instructions, is documented on the Github [Releases](https://github.com/airbnb/react-sketchapp/releases) page.
+- Fix setting overrides (#409)
+- Fix images on NodeJS
+- Fix Border-radius clipping incorrectly calculated (#279)
 
-## Version 3.0.0-beta.1
+## 3.0.0-beta.1
 
 - Fix ShapeGroup on nodejs (#387)
 - Handle specifying document in injectSymbols (#388)
 - Fix support for paragraph spacing on sketch >= 49 (#390)
-
-## Version 3.0.0-beta.0
-
 - Add support for paragraph spacing (#382 - Thanks @lessthanzero!)
 - `Image` and `Text` now support multiple shadows just like `View`
 - add support for `TextShadow`
 - Experimental support for `transform`
 - Experimental support for running `react-sketchapp` on NodeJS
 
-## Version 2.1.0
+## 2.1.1 (2018-12-03)
+
+- Update shadow prop types
+- Update Jest config
+
+## 2.1.0 (2018-09-18)
 
 - Ensure `makeSymbol` does not change currentPage (#353 - Thanks @jaridmargolin!)
 - Fix Text decoration underline style (#370 - Thanks @thecalvinchan!)
 - Add possibility to add multiple shadows and shadow spread (#277 - Thanks @ludwigfrank and @thierryc!)
 - Support rendering into wrapped object (hence support the new Sketch API) (#379)
 
-## Version 2.0.0
+## 2.0.0 (2018-05-12)
 
 - Now throws if the "Symbols" page is explicitly passed in as the `container` on the `render` method. Previously if you explicitly passed in the "Symbols" pages as a container, it would create a new page and render onto that. (#297 - Thanks @jaridmargolin!)
 - Now throws an error if you attempt to render a Document component into a node intended to be a child of `Document`. (#297 - Thanks @jaridmargolin!)

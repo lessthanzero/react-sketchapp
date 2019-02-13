@@ -2,6 +2,7 @@
 
 exports[`<RedBox /> renders simple errors 1`] = `
 <view
+  isToggle={undefined}
   name="RedBox"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -31,6 +32,7 @@ exports[`<RedBox /> renders simple errors 1`] = `
     Error: THIS IS AN ERROR
   </text>
   <view
+    isToggle={undefined}
     name="Frames"
     resizingConstraint={undefined}
     shadows={undefined}
@@ -176,6 +178,7 @@ exports[`<RedBox /> renders simple errors 1`] = `
 
 exports[`<RedBox /> renders string errors 1`] = `
 <view
+  isToggle={undefined}
   name="RedBox"
   resizingConstraint={undefined}
   shadows={undefined}

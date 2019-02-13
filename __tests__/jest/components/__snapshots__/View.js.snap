@@ -2,6 +2,7 @@
 
 exports[`<View /> name defaults to View 1`] = `
 <view
+  isToggle={undefined}
   name="View"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -11,6 +12,7 @@ exports[`<View /> name defaults to View 1`] = `
 
 exports[`<View /> name passes its name 1`] = `
 <view
+  isToggle={undefined}
   name="foo"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -20,6 +22,7 @@ exports[`<View /> name passes its name 1`] = `
 
 exports[`<View /> passes its children 1`] = `
 <view
+  isToggle={undefined}
   name="View"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -31,6 +34,7 @@ exports[`<View /> passes its children 1`] = `
 
 exports[`<View /> style accepts a StyleSheet ordinal 1`] = `
 <view
+  isToggle={undefined}
   name="View"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -44,6 +48,7 @@ exports[`<View /> style accepts a StyleSheet ordinal 1`] = `
 
 exports[`<View /> style accepts a plain object 1`] = `
 <view
+  isToggle={undefined}
   name="View"
   resizingConstraint={undefined}
   shadows={undefined}
@@ -57,6 +62,7 @@ exports[`<View /> style accepts a plain object 1`] = `
 
 exports[`<View /> style accepts an array of plain objects and/or StyleSheet ordinals 1`] = `
 <view
+  isToggle={undefined}
   name="View"
   resizingConstraint={undefined}
   shadows={undefined}

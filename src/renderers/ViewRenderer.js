@@ -1,13 +1,11 @@
 // @flow
 import type { SJShapeGroupLayer } from 'sketchapp-json-flow-types';
 import SketchRenderer from './SketchRenderer';
-import { makeRect, makeColorFill } from '../jsonUtils/models';
+import { makeRect } from '../jsonUtils/models';
 import { makeRectShapeLayer, makeShapeGroup } from '../jsonUtils/shapeLayers';
 import type { ViewStyle, LayoutInfo, TextStyle } from '../types';
 import { createBorders } from '../jsonUtils/borders';
 import hasAnyDefined from '../utils/hasAnyDefined';
-
-const DEFAULT_BACKGROUND_COLOR = 'transparent';
 
 const VISIBLE_STYLES = [
   'shadowColor',
@@ -59,8 +57,6 @@ export default class ViewRenderer extends SketchRenderer {
       return layers;
     }
 
-    const backgroundColor = style.backgroundColor || DEFAULT_BACKGROUND_COLOR;
-
     const frame = makeRect(0, 0, layout.width, layout.height);
     const radii = [
       borderTopLeftRadius,
@@ -77,14 +73,15 @@ export default class ViewRenderer extends SketchRenderer {
       props.resizingConstraint,
     );
 
-    const fill = makeColorFill(backgroundColor);
+    const specChar = props.isToggle ? '= ' : '';
     const content = makeShapeGroup(
       frame,
       [shapeLayer],
       style,
       props.shadows,
-      [fill],
-      props.namekey,
+      undefined,
+      undefined,
+      specChar,
     );
 
     if (hasAnyDefined(style, OVERFLOW_STYLES)) {
